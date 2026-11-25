@@ -1,18 +1,5 @@
-<!--
-  BANNER DO README (copie este arquivo para assets/banner.svg do seu projeto)
-
-  O que trocar (use apenas a busca do editor):
-  1. Textos: "YOUR TEAM", "Project Name", "Short tagline of the project", "v1.0.0" e "Stack  ·  Stack  ·  Stack"
-  2. Cores: #0A1A3F (fundo escuro), #1E4DB7 (meio) e #3FA9F5 (canto claro). O resto é branco com transparência
-  3. Desenho da direita: são três janelas empilhadas (id="card"). Troque por outra coisa ou apague o bloco
-     comentado como CARDS (as quatro linhas de <g>) lá embaixo. Se apagar, aumente o font-size do título para o texto ocupar mais espaço
-
-  Regras que mantêm o banner funcionando no GitHub:
-  - A animação precisa ficar dentro do próprio arquivo (bloco <style>). O GitHub remove <style> do Markdown, mas aceita no SVG
-  - Fontes externas NÃO funcionam. Use só fontes do sistema, como já está
-  - Não use imagens externas (<image href="http...">). O GitHub bloqueia. Se precisar de uma logo, converta para base64 e coloque dentro do SVG
-  - Título longo? Diminua o font-size (68) ou quebre em duas linhas como no exemplo comentado abaixo do título
--->
+<!-- BANNER (copie para assets/banner.svg do seu projeto. Troque os textos "YOUR TEAM", "Project Name", "Short tagline of the project", "v1.0.0" e "Stack", as três cores HEX do fundo e o desenho da direita) -->
+<!-- CUIDADO! A animação precisa ficar dentro do próprio arquivo (bloco style). Fontes e imagens externas não funcionam no GitHub: para uma logo, converta para base64 e coloque dentro do SVG -->
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-label="Project Name, short tagline of the project">
   <defs>
     <!-- FUNDO (troque as três cores HEX) -->
@@ -68,15 +55,13 @@
   <g class="d2"><use href="#card" transform="translate(1007 169) scale(1.18)"/></g>
   <g class="d3"><use href="#card" transform="translate(897 34) scale(1.18)"/></g>
 
-  <!-- TEXTOS (a margem esquerda é 72. Mantenha o bloco centralizado na altura: sobra ~65 em cima e embaixo) -->
+  <!-- TEXTOS (margem esquerda de 72, mantenha o bloco centralizado na altura) -->
   <g class="r1">
     <text x="72" y="92" font-size="20" font-weight="600" letter-spacing="4" fill="#ffffff" fill-opacity="0.78">YOUR TEAM</text>
   </g>
   <g class="r2">
     <text x="70" y="170" font-size="68" font-weight="800" fill="#ffffff">Project Name</text>
-    <!-- Título em duas linhas? Troque a linha acima por estas duas e suba o bloco todo uns 30:
-    <text x="70" y="150" font-size="68" font-weight="800" fill="#ffffff">Project</text>
-    <text x="70" y="220" font-size="68" font-weight="800" fill="#ffffff">Name</text> -->
+    <!-- Título longo? Diminua o font-size (68) ou quebre em duas linhas, repetindo o text com y menor e subindo o bloco todo uns 30 -->
     <text x="72" y="214" font-size="24" fill="#ffffff" fill-opacity="0.9">Short tagline of the project</text>
   </g>
   <g class="r3">

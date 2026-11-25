@@ -1,9 +1,5 @@
-<!--
-  DIVISOR ENTRE SEÇÕES (copie este arquivo para assets/divider.svg do seu projeto)
-
-  O que trocar: apenas as duas cores HEX, #3FA9F5 (esquerda) e #1E4DB7 (direita) e o losango do meio (#3FA9F5).
-  Escolha cores de brilho médio: tons muito escuros somem no tema escuro do GitHub e tons muito claros somem no tema claro.
--->
+<!-- DIVIDER (copie para assets/divider.svg do seu projeto. Troque apenas as cores HEX do degradê e do losango do meio) -->
+<!-- CUIDADO! Use cores de brilho médio: tons muito escuros somem no tema escuro do GitHub e tons muito claros somem no tema claro -->
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="28" viewBox="0 0 1280 28" role="presentation">
   <defs>
     <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">

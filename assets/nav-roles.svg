@@ -1,15 +1,5 @@
-<!--
-  BOTÃO DA BARRA DE LINKS (um arquivo por botão. Link dentro de SVG não é clicável, por isso cada botão é uma imagem dentro de um link)
-
-  Para trocar o texto: edite o texto do botão e ajuste a LARGURA em dois lugares, ambos na tag <svg> logo abaixo:
-  width e o terceiro número do viewBox (hoje 91). Regra prática: 9,4 por letra + 44. O resto se ajusta sozinho.
-
-  Para criar outro botão: copie este arquivo, troque o nome (nav-nome.svg) e o texto, e use no README:
-  <a href="#secao"><img src="assets/nav-nome.svg" alt="Texto" height="34" /></a>
-
-  Cores: troque os dois HEX do gradiente (#1E4DB7 e #3FA9F5) para combinar com o banner.
-  A animação (o botão aparece e um brilho passa por ele) fica no bloco de estilo. Para desligar, apague esse bloco.
--->
+<!-- NAV BUTTON (um arquivo por botão. Troque o texto e a largura: width e o 3º número do viewBox, hoje 91, regra de 9,4 por letra + 44. Troque também os dois HEX do degradê) -->
+<!-- CUIDADO! Link dentro de SVG não é clicável: use o botão como imagem dentro de um link, assim: <a href="#secao"><img src="assets/nav-nome.svg" alt="Texto" height="34" /></a> -->
 <svg xmlns="http://www.w3.org/2000/svg" width="91" height="40" viewBox="0 0 91 40" role="img" aria-label="Roles">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
