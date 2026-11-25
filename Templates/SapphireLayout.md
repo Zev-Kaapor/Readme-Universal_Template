@@ -2,19 +2,20 @@
   SAPPHIRE LAYOUT — modelo de README para SISTEMAS (app, painel, API, serviço com usuários, banco e deploy).
 
   COMO USAR
-  1. Copie os dois arquivos da pasta SapphireAssets para a pasta assets/ do seu projeto: banner.svg e divider.svg
-  2. Neste layout, troque "SapphireAssets/" por "assets/" em todas as imagens (busca e substituição do editor).
-     Aqui o caminho aponta para SapphireAssets/ só para a pré-visualização deste repositório não aparecer quebrada
-  3. Abra o banner.svg e troque os textos e as cores (as instruções estão no começo do arquivo)
+  1. Copie a pasta assets/ (que fica na raiz deste repositório, ao lado de Templates/) para a raiz do seu projeto.
+     Ela tem o banner.svg, o divider.svg e os botões da barra de links (nav-*.svg)
+  2. Neste layout, troque "../assets/" por "assets/" em todas as imagens (busca e substituição do editor).
+     Aqui o caminho tem o "../" só para a pré-visualização deste repositório não aparecer quebrada
+  3. Abra o banner.svg e troque os textos e as cores (as instruções estão no começo do arquivo). Faça o mesmo com os nav-*.svg
   4. Apague este comentário grande e edite o texto de cada seção, seguindo os comentários pequenos
   5. Remova as seções que o seu projeto não usa, junto com a linha do divisor (a tag de imagem com divider.svg) e o item do índice, se houver
 
   O QUE TEM DE DIFERENTE DOS OUTROS MODELOS
-  - Banner animado em SVG, cartões de números e uma barra de links no topo, em vez de uma fileira de badges
+  - Banner animado em SVG, botões animados na barra de links e cartões de números no topo, em vez de uma fileira de badges
   - Tabela "What do you want to do?" (navegação por tarefa) e o Quick start logo no começo
   - Diagramas Mermaid (o GitHub desenha sozinho), incluindo o de jornada ("A day with the system")
   - Seção "Decisions" (as escolhas do projeto com o motivo) e "When something breaks" (sintoma, causa e solução)
-  - Os caminhos das imagens apontam para SapphireAssets/ (veja o passo 2 acima)
+  - Os caminhos das imagens começam com "../assets/" (veja o passo 2 acima)
   - Títulos sem emoji de propósito: assim o link para cada seção (#quick-start etc.) funciona sem gerar id manual
 
   CUIDADOS
@@ -26,18 +27,24 @@
 <!-- HEADER (troque só o texto do alt e a largura se quiser. O banner é o arquivo assets/banner.svg, edite os textos dele lá dentro) -->
 <div align="center">
 
-<img src="SapphireAssets/banner.svg" alt="Project Name, short tagline of the project" width="100%" />
+<img src="../assets/banner.svg" alt="Project Name, short tagline of the project" width="100%" />
 
 <br/><br/>
 
-<!-- BARRA DE LINKS (edite só o texto e o #destino. Remova os itens das seções que você apagar) -->
-<a href="#quick-start"><b>Quick start</b></a> &nbsp;·&nbsp;
-<a href="#how-it-works"><b>How it works</b></a> &nbsp;·&nbsp;
-<a href="#features"><b>Features</b></a> &nbsp;·&nbsp;
-<a href="#roles"><b>Roles</b></a> &nbsp;·&nbsp;
-<a href="#decisions"><b>Decisions</b></a> &nbsp;·&nbsp;
-<a href="#when-something-breaks"><b>Troubleshooting</b></a> &nbsp;·&nbsp;
-<a href="docs/DEPLOY.md"><b>Deploy</b></a>
+<!--
+  BARRA DE LINKS (cada botão é uma imagem SVG animada dentro de um link, porque link dentro de SVG não é clicável)
+  - Para trocar o destino: edite só o href do <a>
+  - Para trocar o texto do botão: abra o arquivo nav-*.svg dele e siga as instruções no começo (o texto e a largura)
+  - Para criar outro botão: copie um nav-*.svg, renomeie, e copie uma linha abaixo trocando href, src e alt
+  - Para tirar um botão: apague a linha. Mantenha height="34" em todos para ficarem do mesmo tamanho
+-->
+<a href="#quick-start"><img src="../assets/nav-quick-start.svg" alt="Quick start" height="34" /></a>
+<a href="#how-it-works"><img src="../assets/nav-how-it-works.svg" alt="How it works" height="34" /></a>
+<a href="#features"><img src="../assets/nav-features.svg" alt="Features" height="34" /></a>
+<a href="#roles"><img src="../assets/nav-roles.svg" alt="Roles" height="34" /></a>
+<a href="#decisions"><img src="../assets/nav-decisions.svg" alt="Decisions" height="34" /></a>
+<a href="#when-something-breaks"><img src="../assets/nav-troubleshooting.svg" alt="Troubleshooting" height="34" /></a>
+<a href="docs/DEPLOY.md"><img src="../assets/nav-deploy.svg" alt="Deploy" height="34" /></a>
 
 <br/><br/>
 
@@ -60,7 +67,7 @@
 > **Real data.** Say what must never go to the repository, such as the `.env` file, database dumps and keys.
 
 <!-- DIVISOR (esta linha se repete entre as seções. Não precisa editar nada, só apague onde não quiser) -->
-<img src="SapphireAssets/divider.svg" alt="" width="100%" />
+<img src="../assets/divider.svg" alt="" width="100%" />
 
 <!-- WHAT IT IS (o que o sistema é, em um ou dois parágrafos curtos, e a tabela com os fatos básicos) -->
 ## What it is
@@ -89,7 +96,7 @@ Add one more short paragraph with what the team gets from it day to day.
 | Fix something that broke | [When something breaks](#when-something-breaks) |
 | Know why it was built this way | [Decisions](#decisions) |
 
-<img src="SapphireAssets/divider.svg" alt="" width="100%" />
+<img src="../assets/divider.svg" alt="" width="100%" />
 
 <!-- QUICK START (o caminho mais comum, do clone ao sistema rodando. Só o essencial: o resto vai nos <details> abaixo) -->
 ## Quick start
@@ -130,7 +137,7 @@ npm run dev
 
 </details>
 
-<img src="SapphireAssets/divider.svg" alt="" width="100%" />
+<img src="../assets/divider.svg" alt="" width="100%" />
 
 <!-- HOW IT WORKS (diagramas Mermaid. Use de 2 a 4. Cuidado com a sintaxe: uma linha errada faz o GitHub mostrar um erro no lugar do desenho)
      A primeira linha %%{init...}%% aplica as cores do projeto. Troque os HEX (primaryColor = caixas, lineColor = setas) ou apague a linha para o tema padrão -->
@@ -176,7 +183,7 @@ flowchart LR
   A -.->|e-mail| M["Mail service"]
 ```
 
-<img src="SapphireAssets/divider.svg" alt="" width="100%" />
+<img src="../assets/divider.svg" alt="" width="100%" />
 
 <!-- FEATURES (seis cartões em grade 3 por 2: emoji + título em negrito + uma frase. Para 3 ou 9 cartões, apague ou copie uma linha <tr>) -->
 ## Features
@@ -207,7 +214,7 @@ flowchart LR
 
 </details>
 
-<img src="SapphireAssets/divider.svg" alt="" width="100%" />
+<img src="../assets/divider.svg" alt="" width="100%" />
 
 <!-- ROLES (perfis de acesso. Apague a seção se o sistema não tem usuários com permissões diferentes) -->
 ## Roles
@@ -219,7 +226,7 @@ flowchart LR
 
 Say where the table of permissions lives in the code, and that the backend checks it again.
 
-<img src="SapphireAssets/divider.svg" alt="" width="100%" />
+<img src="../assets/divider.svg" alt="" width="100%" />
 
 <!-- DECISIONS (as escolhas do projeto que NÃO devem ser desfeitas sem querer, cada uma com o motivo. É a seção que mais ajuda quem chega depois) -->
 ## Decisions
@@ -231,7 +238,7 @@ Why the system is built the way it is. Each line is a choice that should not be 
 | **A choice of the project** | The reason, in one sentence |
 | **Another choice** | The reason, in one sentence |
 
-<img src="SapphireAssets/divider.svg" alt="" width="100%" />
+<img src="../assets/divider.svg" alt="" width="100%" />
 
 <!-- TESTING (como testar e o que os testes cobrem. Diga também o que NÃO é coberto, para a pessoa saber onde conferir à mão) -->
 ## Testing
@@ -247,7 +254,7 @@ Say what the tests cover and what still needs a manual check.
 
 Say who makes the backups, how often and how to restore. Say how the schema is versioned and how to change it, and link the longer guide.
 
-<img src="SapphireAssets/divider.svg" alt="" width="100%" />
+<img src="../assets/divider.svg" alt="" width="100%" />
 
 <!-- WHEN SOMETHING BREAKS (sintoma, causa e o que fazer. Preencha com os erros REAIS que já aconteceram, é a tabela que mais economiza tempo) -->
 ## When something breaks
@@ -256,7 +263,7 @@ Say who makes the backups, how often and how to restore. Say how the schema is v
 | :--- | :--- | :--- |
 | The message of an error | The cause | The fix |
 
-<img src="SapphireAssets/divider.svg" alt="" width="100%" />
+<img src="../assets/divider.svg" alt="" width="100%" />
 
 <!-- WHERE THINGS ARE (mapa curto das pastas, e uma tabela com os outros documentos) -->
 ## Where things are
@@ -271,8 +278,8 @@ assets/         The banner and the divider of this readme
 
 | Document | What it has |
 | :--- | :--- |
-| [CHANGELOG](docs/CHANGELOG.md) | The notes of every version |
-| [DEPLOY](docs/DEPLOY.md) | How to put a change online |
+| <sub>[CHANGELOG](docs/CHANGELOG.md)</sub> | <sub>The notes of every version</sub> |
+| <sub>[DEPLOY](docs/DEPLOY.md)</sub> | <sub>How to put a change online</sub> |
 
 <!-- HISTÓRICO DE VERSÕES (recolhido, uma linha por versão, da mais antiga para a mais nova) -->
 <details>
@@ -286,7 +293,7 @@ assets/         The banner and the divider of this readme
 
 </details>
 
-<img src="SapphireAssets/divider.svg" alt="" width="100%" />
+<img src="../assets/divider.svg" alt="" width="100%" />
 
 <!-- RODAPÉ (centralizado e pequeno. Troque o nome da equipe, o cliente e a frase de licença) -->
 <div align="center">
