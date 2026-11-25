@@ -1,5 +1,4 @@
-<!-- NAV BUTTON (um arquivo por botão. Troque o texto e a largura: width e o 3º número do viewBox, hoje 100, regra de 9,4 por letra + 44. Troque também os dois HEX do degradê) -->
-<!-- CUIDADO! Link dentro de SVG não é clicável: use o botão como imagem dentro de um link, assim: <a href="#secao"><img src="assets/nav-nome.svg" alt="Texto" height="34" /></a> -->
+<!-- NAV BUTTON (um arquivo por botão, troque o texto, a largura em width e no 3º número do viewBox, hoje 100, na regra de 9,4 por letra + 44, e os dois HEX do degradê. CUIDADO! Link dentro de SVG não é clicável, use o botão como imagem dentro de um link) -->
 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="40" viewBox="0 0 100 40" role="img" aria-label="Deploy">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">

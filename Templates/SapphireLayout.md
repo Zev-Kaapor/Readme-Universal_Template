@@ -5,8 +5,7 @@
 
 <br/><br/>
 
-<!-- NAV BUTTONS (cada botão é um arquivo nav-*.svg dentro de um link. Troque o href aqui e o texto dentro do nav-*.svg. Para criar outro, copie uma linha) -->
-<!-- CUIDADO! Link dentro de SVG não é clicável, por isso cada botão é um arquivo. Mantenha height="34" em todos. Os links internos usam o título em minúsculas com hífen (## Quick start vira #quick-start) -->
+<!-- NAV BUTTONS (cada botão é um arquivo nav-*.svg dentro de um link, troque o href aqui e o texto dentro do nav-*.svg. CUIDADO! Mantenha height="34" em todos e lembre que o link usa o título em minúsculas com hífen, ## Quick start vira #quick-start) -->
 <a href="#quick-start"><img src="../assets/nav-quick-start.svg" alt="Quick start" height="34" /></a>
 <a href="#how-it-works"><img src="../assets/nav-how-it-works.svg" alt="How it works" height="34" /></a>
 <a href="#features"><img src="../assets/nav-features.svg" alt="Features" height="34" /></a>
@@ -108,8 +107,7 @@ npm run dev
 
 <img src="../assets/divider.svg" alt="" width="100%" />
 
-<!-- HOW IT WORKS (de 2 a 4 diagramas Mermaid, troque os textos das caixas) -->
-<!-- CUIDADO! Uma linha errada faz o GitHub mostrar um erro no lugar do desenho, e o bloco precisa de uma linha em branco antes e depois -->
+<!-- HOW IT WORKS (de 2 a 4 diagramas Mermaid, troque os textos das caixas. CUIDADO! Uma linha errada mostra um erro no lugar do desenho e o bloco precisa de linha em branco antes e depois) -->
 ## How it works
 
 <!-- MAIN FLOW (cores do diagrama: troque os HEX da primeira linha, primaryColor = caixas e lineColor = setas. Apague a linha para o tema padrão) -->
@@ -219,8 +217,7 @@ npm test
 
 Say what the tests cover and what still needs a manual check.
 
-<!-- BACKUPS AND DATABASE (quem faz o backup, com que frequência, como restaurar e como o banco é versionado) -->
-<!-- CUIDADO! Só escreva o que você conferiu, não prometa um backup que não existe -->
+<!-- BACKUPS AND DATABASE (quem faz o backup, com que frequência, como restaurar e como o banco é versionado. CUIDADO! Só escreva o que você conferiu, não prometa um backup que não existe) -->
 ## Backups and database
 
 Say who makes the backups, how often and how to restore. Say how the schema is versioned and how to change it, and link the longer guide.
@@ -253,8 +250,7 @@ assets/         The banner, the divider and the link buttons of this readme
 | <sub>[CHANGELOG](docs/CHANGELOG.md)</sub> | <sub>The notes of every version</sub> |
 | <sub>[DEPLOY](docs/DEPLOY.md)</sub> | <sub>How to put a change online</sub> |
 
-<!-- VERSION HISTORY (recolhido, uma linha por versão, da mais antiga para a mais nova) -->
-<!-- CUIDADO! O diagrama timeline do Mermaid não está confirmado no GitHub, por isso o histórico é uma tabela -->
+<!-- VERSION HISTORY (recolhido, uma linha por versão, da mais antiga para a mais nova. CUIDADO! O diagrama timeline do Mermaid não está confirmado no GitHub, por isso o histórico é uma tabela) -->
 <details>
 <summary><b>History of the versions</b></summary>
 

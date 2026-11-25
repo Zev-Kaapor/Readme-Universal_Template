@@ -1,5 +1,4 @@
-<!-- BANNER (copie para assets/banner.svg do seu projeto. Troque os textos "YOUR TEAM", "Project Name", "Short tagline of the project", "v1.0.0" e "Stack", as três cores HEX do fundo e o desenho da direita) -->
-<!-- CUIDADO! A animação precisa ficar dentro do próprio arquivo (bloco style). Fontes e imagens externas não funcionam no GitHub: para uma logo, converta para base64 e coloque dentro do SVG -->
+<!-- BANNER (copie para assets/banner.svg, troque os textos, as três cores HEX do fundo e o desenho da direita. CUIDADO! A animação fica dentro do próprio arquivo e fontes ou imagens externas não funcionam no GitHub, para uma logo use base64) -->
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-label="Project Name, short tagline of the project">
   <defs>
     <!-- FUNDO (troque as três cores HEX) -->
