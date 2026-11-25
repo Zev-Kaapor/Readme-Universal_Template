@@ -1,0 +1,88 @@
+<!--
+  BANNER DO README (copie este arquivo para assets/banner.svg do seu projeto)
+
+  O que trocar (use apenas a busca do editor):
+  1. Textos: "YOUR TEAM", "Project Name", "Short tagline of the project", "v1.0.0" e "Stack  ·  Stack  ·  Stack"
+  2. Cores: #0A1A3F (fundo escuro), #1E4DB7 (meio) e #3FA9F5 (canto claro). O resto é branco com transparência
+  3. Desenho da direita: são três janelas empilhadas (id="card"). Troque por outra coisa ou apague o bloco
+     comentado como CARDS (as quatro linhas de <g>) lá embaixo. Se apagar, aumente o font-size do título para o texto ocupar mais espaço
+
+  Regras que mantêm o banner funcionando no GitHub:
+  - A animação precisa ficar dentro do próprio arquivo (bloco <style>). O GitHub remove <style> do Markdown, mas aceita no SVG
+  - Fontes externas NÃO funcionam. Use só fontes do sistema, como já está
+  - Não use imagens externas (<image href="http...">). O GitHub bloqueia. Se precisar de uma logo, converta para base64 e coloque dentro do SVG
+  - Título longo? Diminua o font-size (68) ou quebre em duas linhas como no exemplo comentado abaixo do título
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-label="Project Name, short tagline of the project">
+  <defs>
+    <!-- FUNDO (troque as três cores HEX) -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A1A3F"/>
+      <stop offset="0.55" stop-color="#1E4DB7"/>
+      <stop offset="1" stop-color="#3FA9F5"/>
+    </linearGradient>
+    <!-- BRILHO atrás do desenho (pode apagar junto com o <circle> que usa "glow") -->
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <!-- GRADE do fundo (para tirar, apague o <rect> que usa "grid") -->
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#ffffff" stroke-opacity="0.06"/>
+    </pattern>
+    <!-- JANELA (o desenho que se repete três vezes à direita) -->
+    <g id="card">
+      <rect width="170" height="108" rx="10" fill="#ffffff" fill-opacity="0.11" stroke="#ffffff" stroke-opacity="0.6" stroke-width="2"/>
+      <path d="M0 28H170" stroke="#ffffff" stroke-opacity="0.22" stroke-width="2"/>
+      <circle cx="16" cy="14" r="4" fill="#ffffff" fill-opacity="0.7"/>
+      <circle cx="30" cy="14" r="4" fill="#ffffff" fill-opacity="0.45"/>
+      <circle cx="44" cy="14" r="4" fill="#ffffff" fill-opacity="0.3"/>
+      <rect x="16" y="44" width="100" height="8" rx="4" fill="#ffffff" fill-opacity="0.75"/>
+      <rect x="16" y="62" width="138" height="6" rx="3" fill="#ffffff" fill-opacity="0.4"/>
+      <rect x="16" y="76" width="112" height="6" rx="3" fill="#ffffff" fill-opacity="0.3"/>
+    </g>
+  </defs>
+
+  <!-- ANIMAÇÃO (para desligar, apague este bloco inteiro. O banner continua aparecendo, só fica parado) -->
+  <style>
+    text { font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes drop { from { opacity: 0; transform: translateY(-18px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+    .r1 { animation: rise 0.9s ease-out 0.10s both; }
+    .r2 { animation: rise 0.9s ease-out 0.35s both; }
+    .r3 { animation: rise 0.9s ease-out 0.60s both; }
+    .d1 { animation: drop 0.8s ease-out 0.30s both; }
+    .d2 { animation: drop 0.8s ease-out 0.55s both; }
+    .d3 { animation: drop 0.8s ease-out 0.80s both; }
+    .f1 { animation: fade 1.2s ease-out 0.9s both; }
+  </style>
+
+  <rect width="1280" height="340" rx="20" fill="url(#bg)"/>
+  <rect width="1280" height="340" rx="20" fill="url(#grid)"/>
+  <circle cx="1000" cy="170" r="330" fill="url(#glow)"/>
+
+  <!-- CARDS (três janelas empilhadas sobre uma prateleira. A margem direita é igual à esquerda: 72) -->
+  <g class="f1"><rect x="772" y="300" width="451" height="7" rx="3.5" fill="#ffffff" fill-opacity="0.24"/></g>
+  <g class="d1"><use href="#card" transform="translate(787 169) scale(1.18)"/></g>
+  <g class="d2"><use href="#card" transform="translate(1007 169) scale(1.18)"/></g>
+  <g class="d3"><use href="#card" transform="translate(897 34) scale(1.18)"/></g>
+
+  <!-- TEXTOS (a margem esquerda é 72. Mantenha o bloco centralizado na altura: sobra ~65 em cima e embaixo) -->
+  <g class="r1">
+    <text x="72" y="92" font-size="20" font-weight="600" letter-spacing="4" fill="#ffffff" fill-opacity="0.78">YOUR TEAM</text>
+  </g>
+  <g class="r2">
+    <text x="70" y="170" font-size="68" font-weight="800" fill="#ffffff">Project Name</text>
+    <!-- Título em duas linhas? Troque a linha acima por estas duas e suba o bloco todo uns 30:
+    <text x="70" y="150" font-size="68" font-weight="800" fill="#ffffff">Project</text>
+    <text x="70" y="220" font-size="68" font-weight="800" fill="#ffffff">Name</text> -->
+    <text x="72" y="214" font-size="24" fill="#ffffff" fill-opacity="0.9">Short tagline of the project</text>
+  </g>
+  <g class="r3">
+    <rect x="72" y="248" width="104" height="34" rx="17" fill="#ffffff" fill-opacity="0.2"/>
+    <text x="124" y="271" font-size="17" font-weight="700" text-anchor="middle" fill="#ffffff">v1.0.0</text>
+    <rect x="188" y="248" width="318" height="34" rx="17" fill="#ffffff" fill-opacity="0.13"/>
+    <text x="347" y="271" font-size="16" text-anchor="middle" fill="#ffffff" fill-opacity="0.92">Stack  ·  Stack  ·  Stack</text>
+  </g>
+</svg>
