@@ -97,13 +97,7 @@ Use this area to provide a concise explanation of *why the project exists* and *
 <a id="features"></a> <!-- Detalhe: para colocar com os emojis gere um id manualmente que nem esse aqui -->
 ## ⚙️ Features
 
-<!-- 
-  NOTE TO USER:
-  - "Category" = o nome da área principal da funcionalidade.
-  - "Description" = explicação curta, objetiva e útil.
-  - Mantenha entre 4 e 8 linhas no total para ficar limpo.
-  - Você pode trocar totalmente as categorias conforme o seu projeto, abaixo são somente exemplos.
--->
+<!-- FEATURES TABLE (Category é a área principal da funcionalidade e Description uma explicação curta e útil, mantenha de 4 a 8 linhas e troque as categorias conforme o seu projeto, abaixo são somente exemplos) -->
 
 |      | Category          | Description |
 | :--- | :---------------- | :----------- |
@@ -153,11 +147,7 @@ ProjectName/
 <a id="project-index"></a>
 ### 🗂️ Project Index
 
-<!--
-    Esta seção serve para documentar toda a estrutura do projeto,
-    separada por pastas, com tabelas contendo descrição dos arquivos.
-    Você pode repetir o bloco <details> quantas vezes quiser.
--->
+<!-- PROJECT INDEX (documente toda a estrutura do projeto separada por pastas, com tabelas contendo a descrição dos arquivos, e repita o bloco details quantas vezes quiser) -->
 
 <details open>
     <!-- Nome da pasta principal -->
@@ -270,8 +260,7 @@ pip install -r requirements.txt
 ```
 
 #### **3. Configure environment variables**
-<!-- Explica como configurar variáveis de ambiente ou arquivos de configuração necessários para o projeto -->
-<!-- Crie um arquivo .env com variáveis de exemplo -->
+<!-- ENVIRONMENT VARIABLES (explica como configurar variáveis de ambiente ou arquivos de configuração necessários para o projeto, crie um arquivo .env com variáveis de exemplo) -->
 
 ```env
 API_KEY=your_api_key_here
@@ -292,8 +281,7 @@ python main.py
 ```
 
 #### **5. Optional: Development tools**
-<!-- Aqui você pode documentar ferramentas adicionais úteis para desenvolvedores, como linting, hot reload, testes automáticos, etc. -->
-<!-- Exemplo: iniciar watch mode ou ferramentas de lint -->
+<!-- DEVELOPMENT TOOLS (documente ferramentas adicionais úteis para desenvolvedores, como linting, hot reload e testes automáticos, ex: iniciar watch mode ou ferramentas de lint) -->
 
 ```bash
 npm run dev
@@ -453,8 +441,7 @@ Checkmarks can represent completed tasks, while unchecked items indicate future 
 
 <a id="contributing"></a>
 ## 🤝 Contributing
-<!-- Esta parte serve como porta de entrada rápida para colaboração no projeto -->
-<!-- To enable Discussions: Go to Settings → General → Features → Discussions → Enable. -->
+<!-- CONTRIBUTING (porta de entrada rápida para colaboração no projeto, para ativar as Discussions vá em Settings → General → Features → Discussions → Enable) -->
 
 - **💬 [Open Discussions](https://github.com/Username/ProjectExemple/discussions):** Share insights, provide feedback, or ask questions  
 - **🐛 [Report Issues](https://github.com/Username/ProjectExemple/issues):** Submit bugs you find or request new features  
